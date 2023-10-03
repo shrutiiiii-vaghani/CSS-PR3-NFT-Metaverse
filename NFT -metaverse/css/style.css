@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-content{
+    align-content: center;
+}
+.t-center{
+    text-align: center;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --black:#000;
+    --white:#fff;
+    --redium:#89FF00;
+    --gray:#A4A9AC;
+    --hover:#36bb91;
+    --bgcolor:#020710;
+    --inter:'Inter';
+    --spacemono:'Space Mono';
+}
+body{
+    background-color: var(--bgcolor);
+}
+.w-50{
+    width: 50%;
+}
+.w-100{
+    width: 100%;
+}
+.w-20{
+    width: 20%;
+}
+.w-33{
+    width: 33.3333%;
+}
+.mtb-5{
+    margin: 50px 0;
+}
+
+/* HEADER */
+
+header{
+    padding: 15px 0;
+    position: absolute;
+    width: 100%;
+}
+header h5{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 28px;
+    font-family: var(--inter);
+}
+.menu{
+    margin-left: 190px;
+    margin-top:11px ;
+}
+.menu ul li a{
+    color: var(--white);
+    font-family: var(--inter);
+    font-size: 15px;
+    transition: all 0.5s;
+}
+.menu ul li a:hover{
+    color: var(--hover);
+}
+.menu ul li:hover i{
+    color: var(--hover);
+}
+.menu ul li{
+    padding: 12px 10px;
+}
+.menu ul li i{
+    color: var(--white);
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+.btn1{
+    color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--white);
+    padding: 9px 22px;
+    border-radius: 15px;
+    font-family: var(--inter);
+    transition: all 0.5s;
+    font-size: 15px;
+}
+.btn1:hover{
+   background-color: var(--white);
+   color: var(--black);
+}
+/* banner */
+.banner{
+    background-image: url('../IMG/Texture.png');
+    /* background-color: rgb(3 4 15); */
+    background-color: var(--bgcolor);
+    background-size: cover;
+    width: 100%;
+    background-position: 100% 68%;
+    padding-top: 200px;
+}
+.banner-content span,.about2 span,.title span,.game2 span{
+ font-size: 16px;
+ font-family: var(--inter);
+ color: var(--redium);
+ text-transform: uppercase;
+ font-weight: 600;
+ letter-spacing: 1px;
+ margin-bottom: 10px;
+}
+.banner-content h1{
+    color: var(--white);
+    font-size: 74px;
+    font-family: var(--spacemono);
+    font-weight: 800;
+}
+.banner-content p,.about2 p,.title p,.game2 p{
+    color: var(--gray);
+    font-size: 18px;
+    font-family: var(--inter);
+    font-weight: 400;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btn2{
+    padding: 15px 30px 15px 30px;
+    background-color: var(--redium);
+    font-size: 18px;
+    font-family: var(--inter);
+    color: var(--black);
+    border-radius: 100px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.btn2:hover{
+    background-color: transparent;
+    border-color: var(--redium);
+    color: var(--white);
+}
+ .banner2 img{
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.box1{
+    margin-top: 35px;
+    margin-right: 80px;
+    /* margin-bottom: 20px; */
+}
+.box1 h2{
+    font-size: 46px;
+    color:var(--white);
+    font-family: var(--spacemono);
+    font-weight: 700;
+}
+.box1 span{
+    font-size: 14px;
+    color:var(--gray);
+    font-family: var(--inter);
+}
+.box1 img{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+/* company */
+.company{
+    padding: 50px 0;
+    background-color: var(--bgcolor);
+}
+.company .f{
+    margin-top: 9px;
+}
+/* about */
+
+.about{
+    background-color: var(--bgcolor);
+ }
+.about1{
+    background-image: url('../IMG/ti4hg4t.png');
+    background-size: cover;
+ }
+ .about2 h2,.title h2,.game2 h2{
+    color: var(--white);
+    font-size: 43px;
+    font-family: var(--spacemono);
+    font-weight: 800;
+ }
+ .about2{
+    padding-left: 100px;
+ }
+ /* title */
+
+ .title{
+  text-align: center;
+  margin: auto;
+ }
+ /* box */
+
+ .box{
+    padding: 40px;
+    background-color: transparent;
+    background-image: radial-gradient(at bottom right, #2A303900 0%, #292B31 100%);
+    border-radius:5px;
+    margin: 0 15px;
+}
+ .box h3{
+    color: var(--white);
+    font-family: var(--spacemono);
+    font-size: 32px;
+    font-weight: 500;
+    margin: 20px 0 0 -20px;
+ }
+ .box h2{
+    color: var(--white);
+    font-family: var(--spacemono);
+    font-size: 24px;
+    font-weight: 600;
+    margin: 12px 0;
+ }
+ .box p{
+    font-size: 16px;
+    font-family: var(--inter);
+    color: var(--gray);
+    line-height: 26px;
+ }
+ /* game1 */
+
+
+ .game1{
+    background-image: url('../IMG/Grid4tg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+ }
+ .dis{
+    font-size: 18px;
+    font-family: var(--inter);
+    color: var(--redium);
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s;
+ }
+ .dis:hover{
+    color: var(--white);
+    text-decoration: underline;
+ }
+ /* gallery */
+
+ .gallery img{
+  margin: 10px;
+ }
+ hr{
+    border-top: 1px solid rgba(255, 255, 255, 0.447);
+}
+.accordion-title{
+    color: var(--redium);
+}
+/* explore */
+
+.bigbox{
+    width: 100%;
+    padding: 60px;
+    background-color: transparent;
+    background-image: radial-gradient(at bottom right, #2A303900 0%, #292B31 100%);
+    border-radius: 5px;
+}
+/* footer */
+
+.footer{
+    background-image: url('../IMG/bg-black.png');
+    background-size: cover;
+    padding:32px 15px 8px;
+}
+.footer-content{
+   padding: 30px 0;
+}
+.f1 h4{
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-family: var(--inter);
+    font-weight: bold;
+}
+.f1 p,.f2 p,.f2 p strong a,.f2 p a{
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: var(--inter); 
+    color: var(--white);
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.f2 h4{
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--inter);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.f2 p strong a:hover{
+    color: var(--hover);
+}
+.f2 p a:hover{
+    color: var(--hover);
+}
+.f2 i{
+    color: var(--white);
+    font-size: 18px;
+    padding: 0 5px;
+    transition: all 0.5s;
+}
+.f2 i:hover{
+    color: var(--hover);
+    transform: translateY(-5px);
+}
